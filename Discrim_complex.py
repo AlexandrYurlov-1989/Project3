@@ -22,5 +22,8 @@ else:
     print(f"Дискриминант = {D}")
     x1=(-b+cmath.sqrt(D))/(2*a)
     x2=(-b-cmath.sqrt(D))/(2*a)
-    print("x1=",x1)
-    print("x2=",x2)
+    x1 = complex(round(x1.real, 2),round(x1.imag, 2))
+    x2 = complex(round(x2.real, 2),round(x2.imag, 2))
+    print(f"x1 = {x1}")
+    print(f"x2 = {x2}")
+    
